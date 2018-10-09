@@ -30,8 +30,14 @@ Psudeo Code
 
 -Functions-
 
--Function that starts the game
--Function that takes in clicks. Can I use one of these or should I make multiple versions so that I can 
--Function that comes up with a random number within a certain range and inputs that as the computer guess
--Function that spits out four random and unique nubmers within a certain range to use as a value for each of the four crystals
--
+-Function that loads jQuery after HTML loads
+    -Function that starts the game. Sets everything to zero and initializes two below functions to get new random numbers.
+        -Function that comes up with a random number between 19-120 and inputs that as the computer guess and runs upon game start
+        -Function that spits out four random and unique nubmers between 1-12 to use as a value for each of the four crystals and runs upon game start
+-Function that takes in clicks and initiates chain of activity. Can I use only one of these functions or should I make multiple versions so that I can assign to a certain crystal?
+
+-If/Else Statements-
+
+-If Crystal clicked, add score corresponding to that crystal to player score.
+-If player score === computer guess, alert ("You Win!"), add 1 to wins, initialize startGame function
+-If player score > computer guess, alert ("You Lose!"), add 1 to losses, initialize startGame function
