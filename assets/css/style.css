@@ -4,11 +4,29 @@ body {
     background-size: cover;
 }
 
+.wrap {
+    margin-left: 25px;
+    margin-right: 600px;
+}
+
 #instructions {
-    background-color: black;
+    background-color: darkmagenta;
+    font-size: 16pt;
+    width: 500px;
+    padding: 20px;
+    margin-bottom: 25px;
 }
 
 h1 {
+    background-color: blueviolet;
+    font-size: 22pt;
+    padding-top: 30px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    text-align: center;
+    width: 280px;
+    height: 60px;
     color: white;
 }
 
@@ -20,18 +38,28 @@ h3 {
     color: white;
 }
 
-#crystal1, #crystal2, #crystal3, #crystal4 {
+#computer-number {
+    background-color: darkslateblue;
+    font-size: 40pt;
+    padding: 10px;
+    width: 250px;
+    height: 200px;
+    color: white;
     float: left;
+}
+
+#winsandlosses {
+    float: left;
+    padding: 10px;
+    background-color: darkred;
+    color: white;
+    width: 100px;
+    height: 200px;
+}
+
+#crystal1, #crystal2, #crystal3, #crystal4 {
     width: 100px;
     height: 100px;
-}
-
-#computer-number {
-    color: white;
-}
-
-#wins, #losses {
-    color: white;
 }
 
 #player-score-sum {

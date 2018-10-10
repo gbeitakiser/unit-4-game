@@ -37,7 +37,7 @@ $(document).ready(function() {
     $(writePlayerSum).html(playerSum);
 
     compNumber();
-    $(writeComputerGuess).html("Computer Guess: " + computerGuess);
+    $(writeComputerGuess).html(computerGuess);
     
 
     crystalNumber();
