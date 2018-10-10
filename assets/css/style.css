@@ -10,7 +10,7 @@ body {
 }
 
 #instructions {
-    background-color: darkmagenta;
+    background-color: darkolivegreen;
     font-size: 16pt;
     width: 500px;
     padding: 20px;
@@ -18,7 +18,7 @@ body {
 }
 
 h1 {
-    background-color: blueviolet;
+    background-color: #D48A1A;
     font-size: 22pt;
     padding-top: 30px;
     margin-top: 25px;
@@ -29,12 +29,12 @@ h1 {
     height: 60px;
 }
 
-h2, h3 {
+h1, h2, h3 {
     color: white;
 }
 
-.row-area1 {
-}
+/* .row-area1 {
+} */
 
 .row-area2 {
     margin-top: 270px;
@@ -55,7 +55,7 @@ h2, h3 {
     float: left;
     padding-left: 30px;
     padding-top: 80px;
-    background-color: darkred;
+    background-color: #7C0084;
     color: white;
     width: 100px;
     height: 140px;
@@ -67,7 +67,7 @@ h2, h3 {
 }
 
 #total-score-letters {
-    background-color: blue;
+    background-color:#0FC1BB;
     color: white;
     height: 40px;
     width: 220px;
@@ -77,9 +77,9 @@ h2, h3 {
 }
 
 #player-score-sum {
-    background-color: blue;
+    background-color: #0FC1BB;
     font-size: 40pt;
-    color: white;
+    color: blue;
     height: 200px;
     width: 200px;
     margin-bottom: 15px;
