@@ -38,6 +38,9 @@ $(document).ready(function() {
 
         compNumber();
         $(writeComputerGuess).html(computerGuess);
+
+        $(writeWins).html("Wins: " + wins);
+        $(writeLosses).html("Losses: " + losses);   
         
 
         crystalNumber();
