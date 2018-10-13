@@ -34,80 +34,79 @@ $(document).ready(function() {
     // Starts the game and makes restarting the game without a refresh possible
     function startGame() {
 
-    $(writePlayerSum).html(playerSum);
-
-    compNumber();
-    $(writeComputerGuess).html(computerGuess);
-    
-
-    crystalNumber();
-    console.log(crystal1Total, crystal2Total, crystal3Total, crystal4Total);
-    console.log("---");
-    console.log(playerSum);
-    console.log("---");
-
-
-    // Click Functions
-
-    // Crystal 1
-    $("#crystal1").click(function() {
-        playerSum += crystal1Total;
         $(writePlayerSum).html(playerSum);
-        checkStatus();
-      });
 
-      // Crystal 2
-      $("#crystal2").click(function() {
-        playerSum += crystal2Total;
-        $(writePlayerSum).html(playerSum);
-        checkStatus();
-      });
+        compNumber();
+        $(writeComputerGuess).html(computerGuess);
+        
 
-      // Chrystal 3
-      $("#crystal3").click(function() {
-        playerSum += crystal3Total;
-        $(writePlayerSum).html(playerSum);
-        checkStatus();
-      });
+        crystalNumber();
+        console.log(crystal1Total, crystal2Total, crystal3Total, crystal4Total);
+        console.log("---");
+        console.log(playerSum);
+        console.log("---");
+    }
 
-      // Crystal 4
-      $("#crystal4").click(function() {
-        playerSum += crystal4Total;
-        $(writePlayerSum).html(playerSum);
-        checkStatus();
-      });
+        // Click Functions
+
+        // Crystal 1
+        $("#crystal1").click(function() {
+            playerSum += crystal1Total;
+            $(writePlayerSum).html(playerSum);
+            checkStatus();
+        });
+
+        // Crystal 2
+        $("#crystal2").click(function() {
+            playerSum += crystal2Total;
+            $(writePlayerSum).html(playerSum);
+            checkStatus();
+        });
+
+        // Chrystal 3
+        $("#crystal3").click(function() {
+            playerSum += crystal3Total;
+            $(writePlayerSum).html(playerSum);
+            checkStatus();
+        });
+
+        // Crystal 4
+        $("#crystal4").click(function() {
+            playerSum += crystal4Total;
+            $(writePlayerSum).html(playerSum);
+            checkStatus();
+        });
+
 
       // If/Else statements
     
     function checkStatus() {
+        if (playerSum === computerGuess) {
+            alert("You Win!");
+            wins++;
+            restartGame();
+        }
 
-    if (playerSum === computerGuess) {
-        alert("You Win!");
-        wins++;
-        restartGame();
-    }
+        else if (playerSum > computerGuess) {
+            alert("You Lose!")
+            losses++;
+            restartGame();
+        }
 
-    else if (playerSum > computerGuess) {
-        alert("You Lose!")
-        losses++;
-        restartGame();
-    }
-    }
-
-    // Writes wins and losses to HTML
-    $(writeWins).html("Wins: " + wins);
-    $(writeLosses).html("Losses: " + losses);   
+        // Writes wins and losses to HTML
+        $(writeWins).html("Wins: " + wins);
+        $(writeLosses).html("Losses: " + losses);   
     }
 
     function restartGame() {
 
-    computerGuess = 0;
-    crystal1Total = 0;
-    crystal2Total = 0; 
-    crystal3Total = 0; 
-    crystal4Total = 0; 
-    playerSum = 0;
-    startGame();
+        computerGuess = 0;
+        crystal1Total = 0;
+        crystal2Total = 0; 
+        crystal3Total = 0; 
+        crystal4Total = 0; 
+        playerSum = 0;
+        startGame();
     }
     
     startGame();
