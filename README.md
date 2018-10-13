@@ -1,5 +1,13 @@
 # unit-4-game
 
+Explanation:
+
+This game gives the player a random number within a certain set range that they must try to match by adding to their total score. They add to their score by 
+clicking one of four crystal icons on the screen, each one of which has it's own random value within a set range assigned to it, and see it added to their score. Good players will note the number their score increments by when clicking each crystal in order to add their score up to equal the computer's guess. If the player guesses correctly, an alert pops up telling them they won and adds one to the 'Wins' value. The player score value then resets to zero and the computer guess number and crystal values get assigned new random values. If their score surpasses the computer's guess, an alert comes up telling the player they lost and adds one to the 'Losses' value. The player score value then resets to zero and the computer guess number and crystal values get assigned new random values.
+
+
+
+
 Psudeo Code
 
 ---HTML---
