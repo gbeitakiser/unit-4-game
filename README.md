@@ -49,3 +49,6 @@ Psudeo Code
 -If Crystal clicked, add score corresponding to that crystal to player score.
 -If player score === computer guess, alert ("You Win!"), add 1 to wins, initialize startGame function
 -If player score > computer guess, alert ("You Lose!"), add 1 to losses, initialize startGame function
+
+#Project Link
+https://gbeitakiser.github.io/unit-4-game/ 
